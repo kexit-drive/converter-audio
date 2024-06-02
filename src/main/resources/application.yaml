@@ -16,11 +16,12 @@ eureka:
     metadataMap:
       convertFrom:
         - audio/x-ms-wma
-        - audio/x-aiff
         - audio/aiff
+        - audio/x-aiff
         - audio/aac
-        - audio/x-flac
+        - audio/x-aac
         - audio/flac
+        - audio/x-flac
       convertTo: audio/mpeg
     healthCheckUrlPath: /actuator/health
     instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
